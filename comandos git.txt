@@ -15,6 +15,7 @@ git branch		verifica qtas branch tem, e qual é a ativa (ativa fica na cor verde
 git branch staging	o comando branch + o nome na frente (no caso staging) cria uma nova branch, chamada staging
 git checkout 'staging'	muda da branch atual, para a branch staging, no caso
 git merge staging	faz o merge da branch atual para a branch staging 
+git checkout -b comandos-git master - cria uma nova branch (no caso a comandos-git) e faz o switch de "master" para essa nova branch
 
 Ciclo de trabalho git
 1 - git pull da branch principal
