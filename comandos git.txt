@@ -5,12 +5,14 @@ Se necessário, adicionar novos arquivos e fazer a atualização git
 
 Comandos
 git init - 							inicializa um novo repositório
+git add .							adiciona todos os arquivos da pasta atual de uma vez para o proximo commit
 git status - 							verifica o status atual do repositório git. Verificar se possui atualização a ser adicionada e em qual branch está
 git commit -m""							Cria um novo commit. Caso não esteja atualizada, aplicar esse comando e colocar nome da alteração dentro das "".
 git push 							realiza "upload" da atualização no rep git na nuvem. Verifica o comando que o proprio git pede para aplicar ex: "git push --set-upstream origin master
-git add .							adiciona todos os arquivos da pasta atual de uma vez para o proximo commit
-git reflog							cria um log dos commits realizados caso queira alterar as versões
+
+git reflog							cria um log dos commits realizados caso queira retornar para uma versão anterior
 git reset --hard 						após o reflog, usa o codigo da versão que deseja usar, informado logo após o reflog
+
 git branch							verifica qtas branch tem, e qual é a ativa (ativa fica na cor verde)
 git branch staging						o comando branch + o nome na frente (no caso staging) cria uma nova branch, chamada staging
 git checkout nome-da-branch					muda da branch atual para uma nova branch
