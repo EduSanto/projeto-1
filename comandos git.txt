@@ -4,19 +4,20 @@ Dentro dessa pasta, clicar com o botão direito e selecionar git bash here
 Se necessário, adicionar novos arquivos e fazer a atualização git
 
 Comandos
-git init - 		inicializar git
-git status - 		verificar se possui atualização a ser adicionada e em qual branch está
-git commit -m""		caso não esteja atualizada, aplicar esse comando e colocar nome da alteração dentro das "".
-git push 		realiza "upload" da atualização no rep git. Verifica o comando que o proprio git pede para aplicar "git push --set-upstream origin master
-git add .		adiciona todos os arquivos da pasta de uma vez para realizar o commit
-git reflog		cria um log dos commits realizados caso queira alterar as versões
-git reset --hard 	após o reflog, usa o codigo da versão que deseja usar, informado logo após o reflog
-git branch		verifica qtas branch tem, e qual é a ativa (ativa fica na cor verde)
-git branch staging	o comando branch + o nome na frente (no caso staging) cria uma nova branch, chamada staging
-git checkout 'staging'	muda da branch atual, para a branch staging, no caso
-git merge staging	faz o merge da branch atual para a branch staging 
-git checkout -b comandos-git master - cria uma nova branch (no caso a comandos-git) e faz o switch de "master" para essa nova branch
-touch .gitignore	adiciona um arquivo chamado .gitignore, usado para que arquivo secretos, ou não interessantes ao projeto, não sejam adicionados
+git init - 							inicializa um novo repositório
+git status - 							verifica o status atual do repositório git. Verificar se possui atualização a ser adicionada e em qual branch está
+git commit -m""							Cria um novo commit. Caso não esteja atualizada, aplicar esse comando e colocar nome da alteração dentro das "".
+git push 							realiza "upload" da atualização no rep git na nuvem. Verifica o comando que o proprio git pede para aplicar ex: "git push --set-upstream origin master
+git add .							adiciona todos os arquivos da pasta atual de uma vez para o proximo commit
+git reflog							cria um log dos commits realizados caso queira alterar as versões
+git reset --hard 						após o reflog, usa o codigo da versão que deseja usar, informado logo após o reflog
+git branch							verifica qtas branch tem, e qual é a ativa (ativa fica na cor verde)
+git branch staging						o comando branch + o nome na frente (no caso staging) cria uma nova branch, chamada staging
+git checkout nome-da-branch					muda da branch atual para uma nova branch
+git merge "branch a receber merge"				permite fazer o merge da branch ativa atualmente com outra branch 
+git checkout -b "nome-da-branch-origem" "nome-nova-branch" 	permite mudar e criar uma nova branch com base em outra
+git pull							atualiza a branch atualmente ativa
+touch .gitignore						adiciona um arquivo chamado .gitignore, usado para que arquivo secretos, ou não interessantes ao projeto, não sejam adicionados
 
 Ciclo de trabalho git
 1 - git pull da branch principal
